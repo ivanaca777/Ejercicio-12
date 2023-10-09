@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iván Castro">
+    <meta name="copyright" content="Ref. to author | Todos los derechos reservados">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Contactos</title>
+</head>
+<body>
+    <header>
+        <h1>Mis contactos</h1>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h3>Agregar nuevo contacto:</h3>
+
+            <label for="Nombre">Nombre y Apellido:<input type="text" id="nombre"></label>
+            <p id="errorNombre"></p>
+
+            <label for="email">Dirección de Mail:<input type="text" id="mail"></label>
+            <p id="errorMail"></p>
+    
+            <label for="Fecha de nacimiento">
+                Fecha de nacimiento:
+
+                <input type="date" id="fecha">
+
+            </label>
+            <p id="errorFecha"></p>
+
+        
+            <button type="submit" onclick=generarContacto()>Agregar</button>
+
+        </section>
+
+        <section class="listado">
+
+            <h3>Mi listado de contactos</h3>
+            <select id="listadoContactos" onchange=mostrarDetalles()>
+            </select>
+
+            <article id="datosContacto">
+
+            </article>
+
+        </section>
+        <section>
+            <div id="edicion"></div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="./script.js">
+    </script>  
+</body>
+</html>

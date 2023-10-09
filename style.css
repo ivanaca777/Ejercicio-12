@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(219, 241, 193);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80%;
+}
+main section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+main section p {
+  margin: 0;
+  color: red;
+}
+main section label input {
+  margin: 10px;
+}
+main section button {
+  margin-top: 10px;
+  width: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header h1 {
+  color: rgb(190, 126, 126);
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
